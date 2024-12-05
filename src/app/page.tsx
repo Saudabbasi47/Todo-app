@@ -70,11 +70,12 @@ export default function Page() {
     return null; // Optionally, you can return a loading spinner or similar here
   }
 
-  return (
-    <main className="flex flex-col justify-center items-center gap-3 mt-20">
+  return (<>
+      <h1 className="text-[70px] font-bold mt-6">TODO APP</h1>
+    <main className="flex flex-col justify-center items-center gap-3 ">
       <h1 className="text-[90px]">📄</h1>
       <div className="flex flex-col justify-center items-center gap-2 mt-2">
-        <p className="text-[17px] font-semibold">Add Your List Here</p>
+        <p className="text-[17px] font-extrabold">Add Your List Here ✌</p>
         <span className="flex items-center justify-center">
           <input
             type="text"
@@ -116,5 +117,6 @@ export default function Page() {
         </button>
       </div>
     </main>
+            </>
   );
 }
